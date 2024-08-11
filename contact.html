@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Contact Us</h1>
+        <p>Get in touch with us.</p>
+    </header>
+    <section>
+        <form action="contact-form-handler.php" method="post">
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <label for="location">Select Your Location:</label>
+            <select id="location" name="location" required>
+                <option value="Egypt">Egypt</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+            </select>
+            
+            <label>
+                <input type="checkbox" name="remember" value="yes">
+                Remember Me
+            </label>
+            
+            <button type="submit">Log In</button>
+        </form>
+    </section>
+</body>
+</html>
